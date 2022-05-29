@@ -43,7 +43,7 @@ while True:
             #if .zip file
             if file.endswith(".zip"):
                 try:
-                    extractTo = name + "/" + file[-23:-4]
+                    extractTo = name + "/" + file[-26:-4]
                     mkdir(extractTo) #make folder to extract into
                     with zipfile.ZipFile(file, 'r') as zipRef:
                         zipRef.extractall(extractTo)
